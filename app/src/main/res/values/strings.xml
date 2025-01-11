@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Questionnaire</string>
+
+    <string name="fio_text">Ф.И.О.</string>
+    <string name="fio_hint_text">Фамилия Имя Отчество</string>
+
+    <string name="age_text">Возраст</string>
+    <string name="age_hint_text">23 года</string>
+
+    <string name="salary_text">Уровень ЗП</string>
+
+    <string name="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</string>
+    <string name="answer_text">x</string>
+
+    <string name="answer_btn_text">Сдать тест</string>
+
+    <string name="is_experience">Опыт работы от 2 лет</string>
+    <string name="is_team_dev">Навыки командной разработки</string>
+    <string name="is_business_trip">Готовность к командировкам</string>
+
+
+</resources>

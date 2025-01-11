@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <CheckBox
+        android:id="@+id/experience_check"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/is_experience"
+        android:textSize="18sp"/>
+    <CheckBox
+        android:id="@+id/teamDev_check"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/is_team_dev"
+        android:textSize="18sp"/>
+    <CheckBox
+        android:id="@+id/businessTrip_check"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/is_business_trip"
+        android:textSize="18sp"/>
+</LinearLayout>

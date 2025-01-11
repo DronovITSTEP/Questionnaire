@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+        <TextView
+            android:id="@+id/fio"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/fio_text"
+            android:textSize="18sp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/input_fio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/input_fio" />
+
+        <EditText
+            android:id="@+id/input_fio"
+
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+
+            android:hint="@string/fio_hint_text"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fio"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/age"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="@+id/age_input"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/age_input"
+
+            android:text="@string/age_text"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/age_input"
+
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+
+            android:hint="@string/age_hint_text"
+            android:layout_marginStart="10dp"
+            android:inputType="number"
+            android:textSize="18sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/age"
+            app:layout_constraintTop_toBottomOf="@+id/input_fio" />
+
+        <TextView
+            android:id="@+id/salary"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/salary_text"
+            android:textSize="18sp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/seek_salary" />
+
+        <SeekBar
+            android:id="@+id/seek_salary"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:min="@integer/min_salary"
+            android:max="@integer/max_salary"
+            android:progress="35000"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/salary"
+            app:layout_constraintTop_toBottomOf="@+id/age_input"
+
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="0 руб."
+            android:textSize="18sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/seek_salary"
+            app:layout_constraintTop_toBottomOf="@+id/seek_salary" />
+
+        <include
+            android:id="@+id/include_radio"
+            layout="@layout/radio_questions"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView" />
+
+        <include
+            android:id="@+id/include_check"
+            layout="@layout/check_questions"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/include_radio"/>
+
+        <Button
+            android:id="@+id/send_button"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/include_check"
+
+            android:text="@string/answer_btn_text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@+id/send_button"
+
+            android:text="результат теста"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
