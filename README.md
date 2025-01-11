@@ -30,8 +30,7 @@
 8. Сдать тест (Button)
 9. Текстовое поле с результатом (TextView, по умолчанию скрыто)
 Прототип экрана:
-![prototype_image](![image](https://github.com/user-attachments/assets/babbdb0c-3d7b-4f97-816e-f43259d628a0)
-)
+![prototype_image](https://github.com/DronovITSTEP/Questionnaire/blob/master/%D1%8D%D0%BA%D1%80%D0%B0%D0%BD.png)
 Количество баллов:
 1. За каждый верный ответ по вопросу: + 2 балла (из 10 возможных)
 2. Если опыт работы от 2 лет: + 2 балла
